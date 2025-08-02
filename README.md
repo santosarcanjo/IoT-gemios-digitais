@@ -12,6 +12,8 @@ A conexão entre o ESP32 e os sensores segue conforme mostrado no diagrama esque
 <img width="1509" height="801" alt="image" src="https://github.com/user-attachments/assets/a697bd40-a325-4e5a-a17d-2e4b4f85aa4a" />
 
 ScadaBR
+
+
 De forma a facilitar o acesso às informação obtidas pelo inversor e pelos sensores, também foi desenvolvido um sistema SCADA para a monitoração dos dados, implementando no processo alguns recursos úteis como registro de eventos, alarmes e gráficos. Os dados deste sistema se encontram na pasta ScadaBR, que é o software utilizado para isso. Com o ScadaBR instalado em outra máquina ou servidor, é possível importar estes dados colando o código JSON no campo de dados e clicando em “importar”. Também é necessário substituir a pasta Uploads pela existente na máquina.
 
 Este processo de transferência é executado desta maneira visto que o recurso de exportação em .ZIP não está funcionando nas versões 1.1 e 1.2 do ScadaBR. Para fazer uma exportação completa é necessário fazer backup dos dados utilizando a ferramenta de exportar/importar JSON e copiar manualmente os arquivos das pastas Uploads e Graphics. A pasta Uploads é a pasta do ScadaBR que contém os dados que foram enviados pelo usuário ao sistema, como as figuras de fundo das representações gráficas, por exemplo. Já a pasta Graphics é a pasta que contém as figuras utilizadas nas representações gráficas. Estas pastas se encontram nos seguintes diretórios:
